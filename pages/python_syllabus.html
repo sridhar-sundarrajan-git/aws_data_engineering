@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ablexperts Technical Training</title>
+  <meta name="description" content="Join the courses by Data Vidhya">
+  <link rel="shortcut icon"
+    href="https://d3fu8elvld6rb5.cloudfront.net/datavidhya.com/img/rigi/favicon.ico" type="image/x-icon" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.0/flowbite.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://d3fu8elvld6rb5.cloudfront.net/datavidhya.com/css/tailwind.css" />
+  <style>
+    body {
+      font-family: 'Mulish', Arial, sans-serif; /* Use the Mulish font from Google Fonts */
+      margin: 0;
+      padding: 0;
+      background-color: #f0f0f0;
+    }
+
+    .container {
+      max-width: 600px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: #fff;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      position: relative; /* Ensure the container is positioned relatively */
+    }
+
+    .container:hover {
+      background-color: #f5f5f5;
+    }
+
+    .logo {
+      width: 100px;
+      height: auto;
+      margin-right: 20px;
+    }
+
+    h1 {
+      font-size: 24px;
+      margin: 0;
+    }
+
+    .syllabus {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: calc(100% - 40px);
+      padding: 10px;
+      background-color: #fff;
+      border: 1px solid #ccc;
+      border-top: none;
+      border-radius: 0 0 10px 10px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .syllabus ul {
+      padding: 0;
+      margin: 0;
+      list-style-type: none;
+    }
+
+    .syllabus li {
+      margin-bottom: 5px;
+    }
+
+    .footer {
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+      padding: 10px 0;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header class="sticky top-0 bg-white z-50">
+    <div>
+      <a href="#!" class="flex w-[119px] md:w-[159px] h-[28px] md:h-4 relative z-[999]">
+        <img src="../images/Ablexperts.png" alt="Ablexperts Logo" loading="lazy" width="159" height="32" class="flex" />
+      </a>
+    </div>
+  </header>
+
+  <div class="container" id="contentContainer" onclick="toggleSyllabus()">
+    <img src="../images/Python.jpeg" alt="Python Logo" class="logo">
+    <h1>Python Programming Constructs</h1>
+    <div class="syllabus" id="syllabusContent">
+      <ul>
+        <li>Introduction to Python</li>
+        <li>Variables and Data Types</li>
+        <li>Control Structures</li>
+        <li>Functions</li>
+        <!-- Add more topics as needed -->
+      </ul>
+    </div>
+  </div>
+
+  <div class="footer">
+    <p>Footer content goes here.</p>
+  </div>
+
+  <script>
+    function toggleSyllabus() {
+      var syllabus = document.getElementById('syllabusContent');
+      syllabus.style.display = syllabus.style.display === 'block' ? 'none' : 'block';
+    }
+  </script>
+
+</body>
+
+</html>
